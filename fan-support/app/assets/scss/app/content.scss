@@ -1,0 +1,192 @@
+#main {
+    .fan-support {
+        padding-left: 96px;
+        .fan-support-content {
+            //padding: 0 48px;
+        }
+    }
+}
+
+.fan-support {
+    color: $text-color;
+    font-size: $font-size-base;
+    font-family: $font-family-base;
+    h1 {
+        font-size: 45px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $text-heading;
+        font-family: $headings-font-family;
+    }
+    h2,
+    h3 {
+        font-size: $font-size-h2;
+        margin: 0 0 35px 0;
+    }
+
+    .hero-img {
+        position: relative;
+        background: rgba(110,202,238,1);
+        background: -moz-radial-gradient(center, ellipse cover, rgba(110,202,238,1) 0%, rgba(10,166,226,1) 100%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(110,202,238,1)), color-stop(100%, rgba(10,166,226,1)));
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(110,202,238,1) 0%, rgba(10,166,226,1) 100%);
+        background: -o-radial-gradient(center, ellipse cover, rgba(110,202,238,1) 0%, rgba(10,166,226,1) 100%);
+        background: -ms-radial-gradient(center, ellipse cover, rgba(110,202,238,1) 0%, rgba(10,166,226,1) 100%);
+        background: radial-gradient(ellipse at center, rgba(110,202,238,1) 0%, rgba(10,166,226,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ecaee', endColorstr='#0aa6e2', GradientType=1 );
+        text-align: center;
+        min-height: 300px;
+        .hero-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    .fan-support-content {
+        .request-fansupport {
+            background: #f3f5f6;
+            padding: 70px 48px;
+            h1 {
+                margin-bottom: 60px;
+            }
+        }
+        .request-fansupport-inner {
+            .responsive-img {
+                width: 100%;
+            }
+            p {
+                margin: 0 50px 40px 0;
+            }
+        }
+        h2,h3,h1 {
+            text-align: center;
+            margin-top:0;
+        }
+    }
+
+    .like-facebook-button {
+        text-align: left;
+        margin: 0 0 10px 120px;
+    }
+    .fan-page-share {
+        iframe {
+            width: 100%
+        }
+    }
+    .intro {
+        padding: 50px  120px 70px; 
+        text-align: center;
+        p {
+            margin: 0 0 30px;
+        }
+        h1 {
+            
+            margin: 0 0 24px 0;
+        }
+        .intro-content {
+            margin-bottom: 15px;
+        }
+    }
+    .form-request {
+        margin-top: 52px;
+        label {
+            display: block;
+        }
+        .check-label  {
+            margin-bottom: 15px;
+        }
+        #postcode {
+            max-width: 200px;
+        }
+        .bootstrap-select {
+            width : 100%!important; 
+        }
+        .btn-container {
+            text-align: center;
+            margin: 30px 0 40px;
+            .btn {
+                min-width: 200px;
+            }
+        }
+        textarea {
+            min-height: 124px;
+        }
+        label {
+            color: #444a4c;
+        }
+        @include desktop {
+            .formWrapper {
+                .col-sm-6 {
+                    padding-right: 40px;
+                    & + .col-sm-6 {
+                        border-left: 1px solid $border-color;
+                        padding-right: 15px;
+                        padding-left: 40px;
+                    }
+                }
+            }
+        }
+        
+
+        #disclaimer {
+            p {
+                font-size: 12px;
+                margin: 0;
+                & + p {
+                    margin: 20px  0  0;
+                }
+                color: #888a8b;
+            }
+        }
+    }
+    .social {
+       
+        @include desktop { 
+             max-height: 345px;
+        }
+        @media (min-width: 1400px) {
+             
+            max-height: 560px;
+        }
+        overflow: hidden;
+        .row {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        
+        .col-xs-12 { 
+            padding: 0 5px;
+        }
+    }
+    .gallery {
+         h2,h3 {
+            margin: 0 0 0;
+            text-align: center;
+         }
+         h2 {
+            font-size: 45px;
+         }
+         h3 {
+            font-size: 18px;
+         }
+         padding: 80px 48px;
+         #imgList {
+            margin-top: 50px;
+         }
+         .row {
+            margin-left: -1px;
+            margin-right: -1px;
+         }
+        .col-sm-4 {
+            padding: 0 1px;
+        }
+    }
+}
