@@ -1,0 +1,126 @@
+//  768 to 1024
+@include sm {
+    img {
+        max-width: 100%
+    }
+    .emission {
+        font-size: 15px;
+        h1 {
+            font-size: 45px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        h3 {
+            font-size: 21px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        .panel-group .panel-default .form-group input {
+            min-width: 260px;
+        }
+    }
+}
+
+// 768 screen
+@include xs {
+    #main {
+        .emission {
+            padding-left: 0px;
+            .emission-content {
+                padding: 0 15px;
+            }
+        }
+    }
+    .emission {
+        font-size: 15px;
+        .embed-responsive {
+            margin: 20px 0 40px;
+        }
+        h1 {
+            font-size: 45px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        h3 {
+            font-size: 21px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        .hero {
+            margin-bottom: 40px;
+        }
+        .article-list .row {
+            margin-bottom: 0;
+        }
+        .hero-img-bg {
+            min-height: 325px;
+        }
+        img {
+            max-width: 100%;
+        }
+        .panel-group .panel-default {
+            .panel-body .panel-default {
+                margin-left: 35px;
+            }
+            & > .panel-heading .glyphicon {
+                margin-right: 5px;
+            }
+            .form-submit {
+                padding: 15px;
+            }
+
+            label , input ,select{
+                width: 100%!important;
+                min-width: auto!important;
+
+            }
+            .btn,button {
+                margin-left: 0!important;
+                width: 100%;
+            }
+        }
+        .panel-group .panel-default .form-group {
+            //padding: 20px;
+            input,
+            .btn {
+                width: 100%;
+                marging: 0;
+                min-width: auto;
+            }
+        }
+    }
+}
+
+// 480px screen
+@include xxs {
+    .emission {
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 26px;
+        }
+    }
+}
+
+// 320px screen
+@include xxxs {
+    .emission {
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 23px;
+        }
+    }
+}

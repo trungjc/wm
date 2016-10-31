@@ -1,0 +1,181 @@
+#main {
+    .emission {
+        padding-left: 96px;
+        .emission-content {
+            padding: 0 48px;
+        }
+    }
+}
+
+.emission {
+    color: $text-color;
+    font-size: $font-size-base;
+    font-family: $font-family-base;
+    h1 {
+        font-size: 60px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $text-heading;
+        font-family: $headings-font-family;
+    }
+    h2,
+    h3 {
+        font-size: $font-size-h2;
+        font-family: $font-family-base-bold;
+        margin: 0 0 30px 0;
+    }
+    .article-intro {
+        margin: 0 0 18px 0;
+    }
+    .article {
+        .title {
+            margin: 0 0 0px 0;
+        }
+    }
+    .embed-responsive {
+        margin: 20px 0 60px;
+    }
+    //hero
+    .hero-area {
+        min-height: 325px;
+        position: relative;
+        margin: 0 -48px 56px;
+        padding: 0;
+        background: none;
+        text-align: left;
+        .hero-content {
+            padding: 0 48px;
+        }
+        .hero-img-bg {
+            background-size: cover;
+            background-position: center;
+            img {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        .hero-content {
+            position: absolute;
+            left: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            h1 {
+                margin: 0;
+            }
+        }
+    }
+
+    #yes,#no {
+        display: none;
+        margin: 15px 0;
+         .CheckVin {
+            margin-bottom: 15px;
+        }
+
+    }
+
+    .form-fields {
+        list-style-type: none;
+        padding: 0;
+        .form-field-wrapper {
+            margin: 0 0 15px 0;
+        }
+        label {
+            width: 150px;
+        }
+        select {
+            min-width: 308px;
+        }
+       
+    }
+    .article-list {
+        .row {
+            margin-bottom: 40px;
+        }
+        p {
+            margin: 0 0 30px;
+        }
+    }
+    .panel-group {
+        & > .panel:last-child > .panel-heading {
+            border-bottom: 1px solid $panel-default-border;
+        }
+        .container {
+            width: auto;
+            padding: 0;
+        }
+        .panel + .panel {
+            margin-top: 0;
+        }
+        .list-update-post {
+            margin-top: 15px;
+        }
+        .panel-default {
+            border: none;
+            box-shadow: none;
+            background: none;
+            .panel-heading {
+                padding: $panel-heading-padding;
+            }
+            .panel-body {
+                padding: 0;
+                border: none!important;
+                .panel-default {
+                    margin-left: 52px;
+                }
+                p {
+                    margin: 0 0 15px;
+                }
+            }
+            .embed-responsive {
+                margin: 0;
+            }
+            .form-submit {
+                background: $brand-second;
+                padding: 27px 50px;
+                input {
+                    margin: 0 5px 0 0;
+                    min-width: 308px;
+                }
+                .btn {
+                    min-width: 198px;
+                }
+            }
+            & > .panel-heading {
+                border: none;
+                border-top: 1px solid $panel-default-border;
+                border-radius: 0;
+                background: none;
+                cursor: pointer;
+                a {
+                    color: $text-color;
+                    font-family: $headings-font-family;
+                    display: block;
+                    font-size: 16px;
+                    &:focus,
+                    &:hover {
+                        text-decoration: none;
+                        outline: none;
+                        outline-offset: 0;
+                    }
+                }
+                .glyphicon {
+                    color: $brand-primary;
+                    font-size: 14px;
+                    margin-right: 20px;
+                }
+                .collapsed {
+                    .glyphicon-chevron-down:before {
+                        content: '\e080'
+                    }
+                }
+            }
+        }
+    }
+}
